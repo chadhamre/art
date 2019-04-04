@@ -1,5 +1,4 @@
 // modules
-const fetch = require("node-fetch");
 const pool = require("../database/mysql");
 
 // controller

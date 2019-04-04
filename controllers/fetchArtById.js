@@ -1,9 +1,8 @@
 // modules
-const fetch = require("node-fetch");
 const pool = require("../database/mysql");
 
 // controller
-fetchAllArt = async ctx => {
+fetchAllArtById = async ctx => {
   // TODO: add pagination, for now limiting to first 100 records
   const query = `select t1.*, u.name from (select a.id as artID, a.title, a.artist, c.content, c.userID from art as a left join comments as c on a.id = c.artID where a.id = ${
     ctx.params.id
@@ -38,4 +37,4 @@ fetchAllArt = async ctx => {
   ctx.body = response;
 };
 
-module.exports = fetchAllArt;
+module.exports = fetchAllArtById;

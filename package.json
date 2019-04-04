@@ -9,7 +9,8 @@
     "koa-bodyparser": "^4.2.1",
     "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0",
-    "mysql": "^2.16.0"
+    "koa2-cors": "^2.0.6",
+    "promise-mysql": "^3.3.1"
   },
   "scripts": {
     "dev": "nodemon server.js",

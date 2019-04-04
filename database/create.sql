@@ -1,6 +1,6 @@
 CREATE TABLE `art`
   (
-     id                 INT(11) UNSIGNED NOT NULL PRIMARY KEY,
+     id                 INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
      accession_number   VARCHAR(11),
      artist             VARCHAR(255),
      artistrole         VARCHAR(255),
@@ -22,15 +22,20 @@ CREATE TABLE `art`
      url                VARCHAR(255)
   )
 
+
 CREATE TABLE `comments`
   (
-   id                 INT(11) UNSIGNED NOT NULL PRIMARY KEY,
+   id                 INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
    content            VARCHAR(255),
+   name               VARCHAR(255),
    userID             INT(11)
+   artID              INT(11)
   )
 
 CREATE TABLE `users`
   (
-     id             INT(11) UNSIGNED NOT NULL PRIMARY KEY,
-     names          VARCHAR(255)
+     id             INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+     name           VARCHAR(255),
+     age            INT(11),
+     location       VARCHAR(255)
   )
