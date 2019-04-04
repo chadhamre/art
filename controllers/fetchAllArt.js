@@ -16,7 +16,6 @@ fetchAllArt = async ctx => {
     // format response
     let output = {};
     results.forEach(row => {
-      console.log(row)
       if (!output[row.artID]) {
         output[row.artID] = {
           id: row.artID,
