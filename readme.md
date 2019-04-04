@@ -6,9 +6,10 @@ This API will serve works of art from the Tate Modern art dataset and allow comm
 
 1. Clone this repository locally
 1. CD into the directory created
+1. Make sure you have `node` and `yarn` installed on your machine
 1. Run `yarn` to install dependencies
 1. Run `yarn start` to run the server
-1. This will start a local sever will be started accessible at http://localhost:3000/
+1. This will start a local sever that will be accessible at http://localhost:3000/api/art
 
 #### Choice of Technology:
 
@@ -47,6 +48,14 @@ This API will serve works of art from the Tate Modern art dataset and allow comm
 - Sample POST body: `{"name":"Chad Hamre","age":35,"location":"Canada"}`
 - Note: Content-Type must be set to 'application/json' for the body to be received
 - `TODO` - add validation and error response messages.
+
+### Scope
+
+There were three main feature that I did not complete in the allotted time:
+
+1. Pagination - I would want to add a pagination solution to the retrieve all docs endpoint.
+1. Validation - I would want to add validation to the comments and users endpoints, although some of the validation is done by the database.
+1. Error Messages - I would want to add helpful error messages to the request that receive 4XX status responses.
 
 #### Next Steps
 
