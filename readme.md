@@ -48,6 +48,14 @@ This API will serve works of art from the Tate Modern art dataset and allow comm
 - Note: Content-Type must be set to 'application/json' for the body to be received
 - `TODO` - add validation and error response messages.
 
+### Scope
+
+There were three main feature that I did not complete in the allotted time:
+
+1. Pagination - I would want to add a pagination solution to the retrieve all docs endpoint.
+1. Validation - I would want to add validation to the comments and users endpoints, although some of the validation is done by the database.
+1. Error Messages - I would want to add helpful error messages to the request that receive 4XX status responses.
+
 #### Next Steps
 
 Once the missing functionality called out above with the TODO notes, I'd do the following to tighten up the project:
