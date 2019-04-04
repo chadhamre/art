@@ -53,5 +53,5 @@ This API will serve works of art from the Tate Modern art dataset and allow comm
 Once the missing functionality called out above with the TODO notes, I'd do the following to tighten up the project:
 
 - Add JWT for authentication
-- Create Swagger documentation for Endpoint
+- Create Swagger documentation for endpoints
 - Deploy server to Heroku
