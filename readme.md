@@ -6,6 +6,7 @@ This API will serve works of art from the Tate Modern art dataset and allow comm
 
 1. Clone this repository locally
 1. CD into the directory created
+1. Make sure you have `node` and `yarn` installed on your machine
 1. Run `yarn` to install dependencies
 1. Run `yarn start` to run the server
 1. This will start a local sever will be started accessible at http://localhost:3000/
