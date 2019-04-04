@@ -9,7 +9,7 @@ This API will serve works of art from the Tate Modern art dataset and allow comm
 1. Make sure you have `node` and `yarn` installed on your machine
 1. Run `yarn` to install dependencies
 1. Run `yarn start` to run the server
-1. This will start a local sever that will be accessible at http://localhost:3000/
+1. This will start a local sever that will be accessible at http://localhost:3000/api/art
 
 #### Choice of Technology:
 
