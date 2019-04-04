@@ -14,6 +14,7 @@ This API will serve works of art from the Tate Modern art dataset and allow comm
 
 - To make this project easy so share, I used an AWS hosted MYSQL database.
 - So that you could access it, I included a .env file in this repo which contains credentials to connect. I would of course, in normal circumstances, never put credentials in a repo.
+- `TODO` - tighten security on database.
 
 #### Endpoints
 
