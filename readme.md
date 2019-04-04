@@ -10,6 +10,11 @@ This API will serve works of art from the Tate Modern art dataset and allow comm
 1. Run `yarn start` to run the server
 1. This will start a local sever will be started accessible at http://localhost:3000/
 
+#### Choice of Technology:
+
+- I chose to build this backend in node.js, although I'd be tempted to do a serverless setup for something like this in the future.
+- I used koa.js for networking, which has some advantages over Express.
+
 #### Database:
 
 - To make this project easy so share, I used an AWS hosted MYSQL database.
