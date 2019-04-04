@@ -2,7 +2,7 @@
 
 This API will serve works of art from the Tate Modern art dataset and allow comments and users to be added.
 
-To run this project locally:
+#### To run this project locally:
 
 1. Clone this repository locally
 1. CD into the directory created
@@ -10,12 +10,12 @@ To run this project locally:
 1. Run `yarn start` to run the server
 1. This will start a local sever will be started accessible at http://localhost:3000/
 
-Database:
+#### Database:
 
 - To make this project easy so share, I used an AWS hosted MYSQL database.
 - So that you could access it, I included a .env file in this repo which contains credentials to connect. I would of course, in normal circumstances, never put credentials in a repo.
 
-### Endpoints
+#### Endpoints
 
 `/api/art` - GET
 
@@ -40,3 +40,11 @@ Database:
 - Sample POST body: `{"name":"Chad Hamre","age":35,"location":"Canada"}`
 - Note: Content-Type must be set to 'application/json' for the body to be received
 - `TODO` - add validation and error response messages.
+
+#### Next Steps
+
+Once the missing functionality called out above with the TODO notes, I'd do the following to tighten up the project:
+
+- Add JWT for authentication
+- Create Swagger documentation for Endpoint
+- Deploy server to Heroku

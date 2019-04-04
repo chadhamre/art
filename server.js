@@ -23,4 +23,4 @@ app
   .use(router.routes());
 
 app.listen(process.env.PORT || 3000);
-console.log("\u001b[31m31 - RESTARTED\u001b[0m");
+console.log("\u001b[31mSERVER STARTED\u001b[0m");
