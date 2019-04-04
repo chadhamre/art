@@ -4,12 +4,15 @@ const pool = require("../database/mysql");
 // controller
 fetchAllArt = async ctx => {
   try {
-    // TODO: add pagination, for now limiting to first 100 records
+
     // execute query
     const query =
       "select t1.*, u.name from (select a.id as artID, a.title, a.artist, c.content, c.userID from art as a left join comments as c on a.id = c.artID limit 100) as t1 left join users as u on t1.userID = u.id";
     const results = await pool.query(query);
 
+    // TODO: add pagination, for now limiting to first 100 records
+
+    // format response
     let output = {};
     results.forEach(row => {
       if (!output[row.artID]) {
@@ -35,7 +38,9 @@ fetchAllArt = async ctx => {
       return output[key];
     });
 
+    // return response
     ctx.body = response;
+
   } catch (err) {
     console.log("ERROR", err);
   }
