@@ -18,7 +18,7 @@ fetchAllArt = async ctx => {
         name: row.name,
         age: row.age,
         location: row.location,
-        max: row.max
+        maxBid: row.max
       });
     });
 
